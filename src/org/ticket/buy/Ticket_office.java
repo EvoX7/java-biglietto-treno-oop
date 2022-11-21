@@ -32,6 +32,8 @@ public class Ticket_office {
 			System.err.println("Invalid input");
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
+		} finally {
+			sc.close();
 		}
 	}
 }
