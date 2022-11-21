@@ -1,6 +1,7 @@
 package org.ticket.buy;
 
 import java.time.LocalDate;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ticket_office {
@@ -19,7 +20,7 @@ public class Ticket_office {
 
 				System.out.println("--------------------------");
 
-//		Generate new Ticket
+				// Generate new Ticket
 				System.out.println("\nYour Ticket");
 				System.out.println("--------------------------");
 
@@ -27,9 +28,10 @@ public class Ticket_office {
 				System.out.println(ticket1);
 				break;
 			}
-
+		} catch (InputMismatchException e) {
+			System.err.println("Invalid input");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.err.println(e.getMessage());
 		}
 	}
 }
