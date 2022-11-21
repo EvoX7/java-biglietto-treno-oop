@@ -22,19 +22,14 @@ public class Ticket_office {
 //		Generate new Ticket
 				System.out.println("\nYour Ticket");
 				System.out.println("--------------------------");
-				
-				
+
 				Ticket ticket1 = new Ticket(km, age);
 				System.out.println(ticket1);
 				break;
-
 			}
+
 		} catch (Exception e) {
-			System.err.println(e.getMessage());
+			System.out.println(e.getMessage());
 		}
-
-		;
-
 	}
-
 }
